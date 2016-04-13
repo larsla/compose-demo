@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Web counter</title>
+  <style type="text/css" media="all">
+    html, body {
+      height: 100%;
+    }
+
+    html {
+        display: table;
+        margin: auto;
+    }
+
+    body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    #count {
+      background: yellow;
+      padding: 10px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body onLoad="httpGetAsync('/api/counter');">
+  <div id="count" style="font-size:xx-large"></div>
+</body>
+
+</html>
